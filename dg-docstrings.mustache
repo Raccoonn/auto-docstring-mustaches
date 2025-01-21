@@ -1,0 +1,26 @@
+{{! Numpy Docstring Template }}
+
+DESCRIPTION: {{summaryPlaceholder}}
+
+PARAMETERS: {{#args}}{{var}} (REQ, {{typePlaceholder}}) - {{descriptionPlaceholder}}     
+            {{#placeholder}}            {{/placeholder}}
+			{{/args}}
+			
+			{{#kwargs}}{{var}} (OPT, {{typePlaceholder}}), by default {{&default}} - {{descriptionPlaceholder}}     
+            {{#placeholder}}            {{/placeholder}}
+			{{/kwargs}}
+
+RETURNS: {{#returns}}{{var}} {{typePlaceholder}} - {{descriptionPlaceholder}}     
+         {{#placeholder}}         {{/placeholder}}{{/returns}}
+
+{{#yieldsExist}}
+YIELDS: {{#yields}}{{typePlaceholder}} - {{descriptionPlaceholder}}     
+        {{#placeholder}}         {{/placeholder}}{{/yields}}
+{{/yieldsExist}}
+{{#exceptionsExist}}
+
+EXCEPTIONS: {{#exceptions}}{{typePlaceholder}} - {{descriptionPlaceholder}}     
+            {{#placeholder}}         {{/placeholder}}{{/exceptions}}
+{{/exceptionsExist}}
+{{#placeholder}}
+{{/placeholder}}
